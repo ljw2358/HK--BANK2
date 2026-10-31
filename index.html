@@ -9,18 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #07090e;
-            --bg-secondary: #0d111a;
-            --card-bg: #131a26;
-            --card-border: #1f2a3e;
-            --accent-gold: #ffaa00;
-            --accent-gold-glow: rgba(255, 170, 0, 0.35);
-            --accent-cyan: #00e5ff;
-            --accent-cyan-glow: rgba(0, 229, 255, 0.3);
-            --accent-green: #00ffa3;
-            --text-main: #f0f4f8;
-            --text-muted: #8a99ad;
-            --danger: #ff4757;
+            --bg-primary: #040609;
+            --bg-secondary: #090d16;
+            --card-bg: #0f1726;
+            --card-border: #1b283f;
+            --accent-gold: #ffc107;
+            --accent-gold-glow: rgba(255, 193, 7, 0.4);
+            --accent-cyan: #00f0ff;
+            --accent-cyan-glow: rgba(0, 240, 255, 0.35);
+            --accent-green: #00ffaa;
+            --text-main: #f4f8fb;
+            --text-muted: #8c9cb5;
+            --danger: #ff3b30;
             --pi-color: #f7931a;
         }
 
@@ -33,7 +33,7 @@
         }
 
         select option {
-            background-color: #1a1a1a !important;
+            background-color: #0f1726 !important;
             color: #ffffff !important;
         }
 
@@ -53,12 +53,12 @@
             max-width: 480px;
             background-color: var(--bg-secondary);
             min-height: 100vh;
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
             position: relative;
             display: flex;
             flex-direction: column;
-            border-left: 1px solid rgba(255, 255, 255, 0.05);
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 1px solid rgba(255, 255, 255, 0.08);
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         header {
@@ -66,8 +66,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(13, 17, 26, 0.95);
-            backdrop-filter: blur(12px);
+            background: rgba(9, 13, 22, 0.95);
+            backdrop-filter: blur(14px);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -75,7 +75,7 @@
         }
 
         .menu-btn {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.06);
             border: 1px solid var(--card-border);
             color: var(--accent-gold);
             width: 44px;
@@ -103,7 +103,7 @@
             font-weight: 900;
             color: var(--accent-gold);
             letter-spacing: 1px;
-            text-shadow: 0 0 10px var(--accent-gold-glow);
+            text-shadow: 0 0 12px var(--accent-gold-glow);
         }
 
         .header-center-title p {
@@ -124,15 +124,16 @@
             font-weight: 900;
             font-size: 16px;
             border: 1px solid var(--card-border);
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
         }
 
         .lang-bar {
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.4);
+            padding: 12px 20px;
+            background: rgba(0, 0, 0, 0.5);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
 
         .lang-info {
@@ -153,7 +154,7 @@
             font-size: 12px;
             outline: none;
             cursor: pointer;
-            max-width: 180px;
+            max-width: 200px;
         }
 
         main {
@@ -171,18 +172,18 @@
             font-size: 32px;
             font-weight: 900;
             color: var(--accent-gold);
-            text-shadow: 0 0 25px var(--accent-gold-glow);
+            text-shadow: 0 0 30px var(--accent-gold-glow);
             letter-spacing: 2px;
             margin-bottom: 6px;
             text-align: center;
         }
 
         .sub-title {
-            font-size: 16px;
+            font-size: 15px;
             color: var(--accent-cyan);
             font-weight: 700;
             letter-spacing: 1px;
-            text-shadow: 0 0 10px var(--accent-cyan-glow);
+            text-shadow: 0 0 12px var(--accent-cyan-glow);
             text-align: center;
         }
 
@@ -192,7 +193,7 @@
             border-radius: 20px;
             padding: 22px;
             margin-bottom: 28px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
             position: relative;
             overflow: hidden;
         }
@@ -218,7 +219,7 @@
         }
 
         .pi-box {
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px;
             padding: 16px;
@@ -246,7 +247,7 @@
             font-weight: 900;
             font-size: 13px;
             font-family: serif;
-            box-shadow: 0 0 8px rgba(247, 147, 26, 0.5);
+            box-shadow: 0 0 10px rgba(247, 147, 26, 0.6);
         }
 
         .pi-amount {
@@ -265,7 +266,7 @@
         }
 
         .interest-box {
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px;
             padding: 16px;
@@ -291,13 +292,13 @@
 
         .interest-value.glow {
             color: #ffffff;
-            text-shadow: 0 0 12px var(--accent-green);
+            text-shadow: 0 0 15px var(--accent-green);
         }
 
         .mainnet-btn {
             width: 100%;
-            background: linear-gradient(135deg, #ffaa00, #e67e22);
-            color: #000;
+            background: linear-gradient(135deg, var(--accent-gold), #ff8800);
+            color: #040609;
             border: none;
             padding: 15px;
             border-radius: 14px;
@@ -358,8 +359,8 @@
         .network-card:hover, .network-card:active {
             border-color: var(--accent-gold);
             transform: translateY(-3px);
-            background: #182232;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: #152033;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
         }
 
         .card-top-center {
@@ -370,19 +371,19 @@
             width: 44px;
             height: 44px;
             border-radius: 12px;
-            background: rgba(255, 255, 255, 0.04);
+            background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        .card-icon-1 { color: #00e5ff; font-size: 20px; }
-        .card-icon-2 { color: #ffaa00; font-size: 20px; }
-        .card-icon-3 { color: #00ffa3; font-size: 20px; }
-        .card-icon-4 { color: #9b59b6; font-size: 20px; }
-        .card-icon-5 { color: #ff4757; font-size: 20px; }
-        .card-icon-6 { color: #2ecc71; font-size: 20px; }
-        .card-icon-7 { color: #3498db; font-size: 20px; }
-        .card-icon-8 { color: #e74c3c; font-size: 20px; }
-        .card-icon-9 { color: #f1c40f; font-size: 20px; }
+        .card-icon-1 { color: #00f0ff; font-size: 20px; }
+        .card-icon-2 { color: #ffc107; font-size: 20px; }
+        .card-icon-3 { color: #00ffaa; font-size: 20px; }
+        .card-icon-4 { color: #b085f5; font-size: 20px; }
+        .card-icon-5 { color: #ff3b30; font-size: 20px; }
+        .card-icon-6 { color: #34c759; font-size: 20px; }
+        .card-icon-7 { color: #00c7be; font-size: 20px; }
+        .card-icon-8 { color: #ff9500; font-size: 20px; }
+        .card-icon-9 { color: #5856d6; font-size: 20px; }
         .card-icon-10 { color: #f7931a; font-size: 20px; }
 
         .card-title {
@@ -416,7 +417,7 @@
         .agi-avatar {
             width: 44px;
             height: 44px;
-            background: linear-gradient(135deg, var(--accent-cyan), #0072ff);
+            background: linear-gradient(135deg, var(--accent-cyan), #0066ff);
             border-radius: 14px;
             display: flex;
             justify-content: center;
@@ -488,16 +489,16 @@
         }
 
         .chat-msg.beeni {
-            background: rgba(0, 229, 255, 0.1);
-            border: 1px solid rgba(0, 229, 255, 0.25);
-            color: #d1f7ff;
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            color: #d1f9ff;
             align-self: flex-start;
         }
 
         .chat-msg.user {
-            background: rgba(255, 170, 0, 0.15);
-            border: 1px solid rgba(255, 170, 0, 0.35);
-            color: #ffe6b3;
+            background: rgba(255, 193, 7, 0.15);
+            border: 1px solid rgba(255, 193, 7, 0.4);
+            color: #fff3cd;
             align-self: flex-end;
         }
 
@@ -519,7 +520,7 @@
 
         .chat-send-btn {
             background: var(--accent-gold);
-            color: #000;
+            color: #040609;
             border: none;
             padding: 0 18px;
             border-radius: 10px;
@@ -530,7 +531,7 @@
 
         footer {
             padding: 24px 20px;
-            background: #05070a;
+            background: #020305;
             border-top: 1px solid var(--card-border);
             text-align: center;
             font-size: 11px;
@@ -554,7 +555,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(6px);
             z-index: 200;
             opacity: 0;
@@ -723,7 +724,7 @@
         }
 
         .max-btn {
-            background: rgba(255, 170, 0, 0.15);
+            background: rgba(255, 193, 7, 0.15);
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
             padding: 2px 8px;
@@ -735,7 +736,7 @@
 
         .max-btn:active {
             background: var(--accent-gold);
-            color: #000;
+            color: #040609;
         }
 
         .form-control {
@@ -756,7 +757,7 @@
         .action-btn {
             width: 100%;
             background: var(--accent-gold);
-            color: #000;
+            color: #040609;
             border: none;
             padding: 14px;
             border-radius: 12px;
@@ -803,22 +804,24 @@
             <div class="profile-badge">HK</div>
         </header>
 
-        <!-- Dynamic Multi-Language Selector Engine (18 Languages) -->
+        <!-- Dynamic Multi-Language Selector Engine (Exact 20 Nations including Bengali) -->
         <div class="lang-bar">
             <div class="lang-info">
                 <i class="fa-solid fa-globe"></i>
-                <span data-i18n="langEngineLabel">18개국 글로벌 다국어 엔진</span>
+                <span data-i18n="langEngineLabel">20개국 글로벌 다국어 엔진</span>
             </div>
             <select class="lang-select" id="langSelect" onchange="changeLanguage(this.value)">
                 <option value="ko" selected>🇰🇷 한국어 (Korean)</option>
                 <option value="en">🇺🇸 영어 (English)</option>
+                <option value="bn">🇧🇩 벵골어 (Bengali)</option>
+                <option value="pt">🇧🇷 포르투갈어 (Portuguese)</option>
                 <option value="zh">🇨🇳 중국어 (Chinese)</option>
                 <option value="ja">🇯🇵 일본어 (Japanese)</option>
                 <option value="ru">🇷🇺 러시아어 (Russian)</option>
                 <option value="vi">🇻🇳 베트남어 (Vietnamese)</option>
                 <option value="th">🇹🇭 태국어 (Thai)</option>
                 <option value="id">🇮🇩 인도네시아어 (Indonesian)</option>
-                <option value="ar">🇵🇸 팔레스타인/아랍어 (Arabic)</option>
+                <option value="ar">🇵🇸 아랍어 (Arabic)</option>
                 <option value="de">🇩🇪 독일어 (German)</option>
                 <option value="it">🇮🇹 이태리어 (Italian)</option>
                 <option value="fr">🇫🇷 프랑스어 (French)</option>
@@ -997,10 +1000,10 @@
                 Support: support@hkwb.world
             </p>
             <div style="display: flex; justify-content: center; gap: 16px; align-items: center;">
-                <a href="https://www.youtube.com/@Hyekong2026" target="_blank" style="color: #ff0000; text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; background: rgba(255,0,0,0.1); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,0,0,0.2);">
+                <a href="https://www.youtube.com/@Hyekong2026" target="_blank" style="color: #ff3b30; text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; background: rgba(255,59,48,0.1); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,59,48,0.25);">
                     <i class="fa-brands fa-youtube"></i> YouTube (@Hyekong2026)
                 </a>
-                <a href="https://www.tiktok.com/@hyekong2026" target="_blank" style="color: #fff; text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; background: rgba(254,44,85,0.15); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(254,44,85,0.3);">
+                <a href="https://www.tiktok.com/@hyekong2026" target="_blank" style="color: #fff; text-decoration: none; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15);">
                     <i class="fa-brands fa-tiktok"></i> TikTok (@hyekong2026)
                 </a>
             </div>
@@ -1024,10 +1027,10 @@
                     <i class="fa-solid fa-circle-question"></i> <span data-i18n="menu_faq">자주 묻는 질문 (FAQ 20선 심층)</span>
                 </div>
                 <div class="menu-item" onclick="openInfoModal('policies')">
-                    <i class="fa-solid fa-shield-halved"></i> <span data-i18n="menu_pol">3대 POLICIES (AML·KYC·보안)</span>
+                    <i class="fa-solid fa-shield-halved"></i> <span data-i18n="menu_pol">3대 POLICIES (AML·KYC·보안 상세)</span>
                 </div>
                 <div class="menu-item" onclick="openInfoModal('regulations')">
-                    <i class="fa-solid fa-scale-balanced"></i> <span data-i18n="menu_reg">18개국 디지털 자산법 및 AML 컴플라이언스</span>
+                    <i class="fa-solid fa-scale-balanced"></i> <span data-i18n="menu_reg">20개국 디지털 자산법 및 AML 컴플라이언스</span>
                 </div>
             </div>
 
@@ -1075,7 +1078,7 @@
         </div>
     </div>
 
-    <!-- JavaScript Platform Logic & Detailed Content Engines (40 Whitepaper Items) -->
+    <!-- JavaScript Platform Logic & Detailed Content Engines -->
     <script>
         let baseInterest = 12450892.600000;
         let currentWalletBalance = 314159.000000;
@@ -1085,10 +1088,22 @@
         let activeModalType = null;
 
         function getFullWhitepaperHtml(lang) {
+            let isBn = (lang === 'bn');
+            let isPt = (lang === 'pt');
             let isEn = (lang === 'en');
             let items = [];
             for(let i=1; i<=40; i++) {
-                if(isEn) {
+                if(isBn) {
+                    items.push({
+                        title: `${i}. হোয়াইটপেপার কোর সেকশন ${i} (AML এবং বিকেন্দ্রীকৃত আর্কিটেকচার)`,
+                        content: `HK WORLD BANK বৈশ্বিক নেটওয়ার্কের জন্য বিস্তারিত প্রোটোকল স্পেসিফিকেশন এবং কমপ্লায়েন্স নিয়ম নম্বর ${i}।`
+                    });
+                } else if(isPt) {
+                    items.push({
+                        title: `${i}. Whitepaper Seção Core ${i} (AML & Arquitetura Descentralizada)`,
+                        content: `Especificação detalhada do protocolo e regras de conformidade AML número ${i} para a rede global HK WORLD BANK.`
+                    });
+                } else if(isEn) {
                     items.push({
                         title: `${i}. Whitepaper Core Section ${i} (AML & Decentralized Architecture)`,
                         content: `Detailed protocol specification and compliance enforcement rule number ${i} for HK WORLD BANK global network.`
@@ -1103,7 +1118,7 @@
                         case 5: desc = "SONPONE 손폰 감지 시스템을 통한 고정밀 실시간 데이터 수신 규격입니다."; break;
                         case 6: desc = "3년 만기 31.41% APY 신탁 볼트 초단위 복리 이자 산출 알고리즘입니다."; break;
                         case 7: desc = "멀티시그(Multisig) 유동성 풀 지갑 보호 및 비수탁 보안 프로토콜입니다."; break;
-                        case 8: desc = "18개국 글로벌 다국어 금융 문맥 유니버설 번역 엔진입니다."; break;
+                        case 8: desc = "20개국 글로벌 다국어 금융 문맥 유니버설 번역 엔진입니다."; break;
                         case 9: desc = "HK 사회 재단 & 지자체 연계 UBI(기본소득) 정기 분배 모델입니다."; break;
                         case 10: desc = "DEX 오더레스 P2P 유동성 자동 매칭 오더북 시스템입니다."; break;
                         case 11: desc = "유동성 공급 증명(PoL) 및 고배당 권한 자동 부여 스마트 컨트랙트입니다."; break;
@@ -1153,10 +1168,22 @@
         }
 
         function getFullFaqHtml(lang) {
+            let isBn = (lang === 'bn');
+            let isPt = (lang === 'pt');
             let isEn = (lang === 'en');
             let items = [];
             for(let i=1; i<=20; i++) {
-                if(isEn) {
+                if(isBn) {
+                    items.push({
+                        q: `પ્રশ্ন ${i}. HK WORLD BANK সম্পর্কে প্রায়শই জিজ্ঞাসিত প্রশ্ন নম্বর ${i}?`,
+                        a: `উঃ টেস্টনেট এবং AML প্রয়োগ সংক্রান্ত প্রশ্ন ${i} এর জন্য বিস্তারিত উত্তর এবং কমপ্লায়েন্স নির্দেশিকা।`
+                    });
+                } else if(isPt) {
+                    items.push({
+                        q: `Q${i}. Pergunta Frequente Número ${i} sobre o HK WORLD BANK?`,
+                        a: `R. Resposta detalhada e diretriz de conformidade AML para a questão ${i}.`
+                    });
+                } else if(isEn) {
                     items.push({
                         q: `Q${i}. Frequently Asked Question Number ${i} about HK WORLD BANK?`,
                         a: `A. Detailed answer and compliance guideline for question ${i} regarding testnet and AML enforcement.`
@@ -1199,7 +1226,7 @@
 
         const translations = {
             ko: {
-                headerSubText: "글로벌 차세대 분산 금융", langEngineLabel: "18개국 글로벌 다국어 엔진", subTitle: "빠른 금융 작업 마스터 코어",
+                headerSubText: "글로벌 차세대 분산 금융", langEngineLabel: "20개국 글로벌 다국어 엔진", subTitle: "빠른 금융 작업 마스터 코어",
                 dashTitle: "개인 자산 대시보드", piSyncLabel: "보유 수량 (PI 수량 원장 동기화)", interestLabel: "실시간 누적 이자 (3년 31.41% APY 복리)",
                 mainnetBtnText: "코어팀에게 메인넷 즉시 신청하기", gridSectionTitle: "분산 연동망", gridSectionSub: "[개별 프로세스 작동]",
                 agiTitle: "AGI 삐니 고객센터", agiSub: "손폰(SONPONE) 자동 반응 및 AI 오케스트레이션", sonponeLabelText: "손폰(SONPONE) 감지 감도:", syncText: "(실시간 싱크)",
@@ -1237,23 +1264,30 @@
                 calcDefault: "예치할 수량을 입력해주세요 (+0.00)",
                 calcResult: (p, r) => `${p}년 복리 적용 시 예상 수익: +${r} HK/PI`,
                 drawerTitle: "HK NAVIGATOR", menuGroup1Title: "Core Legal & Compliance", menuGroup2Title: "HK Global Ecosystem Hubs",
-                menu_wp: "백서 (Whitepaper v3.1 상세 40선)", menu_faq: "자주 묻는 질문 (FAQ 20선 심층)", menu_pol: "3대 POLICIES (AML·KYC·보안)", menu_reg: "18개국 디지털 자산법 및 AML 컴플라이언스",
+                menu_wp: "백서 (Whitepaper v3.1 상세 40선)", menu_faq: "자주 묻는 질문 (FAQ 20선 심층)", menu_pol: "3대 POLICIES (AML·KYC·보안 상세)", menu_reg: "20개국 디지털 자산법 및 AML 컴플라이언스",
                 hub_robot: "로봇: HK-ROBOT", hub_nexus: "스마트 글래스: HK-NEXUS", hub_uam: "도심항공교통: HK-UAM", hub_fusion: "인공태양: HK-FUSION", hub_bio: "퀀텀바이오: HK-QUANTUMBIO", hub_space: "우주모빌리티: HK-SPACE", hub_parts: "부품뱅크: HK-PARTSBANK", hub_defence: "국방기술: HK-DEFENCE-HUB", hub_t165: "T165 초특급 랜드마크 허브 (경주 사옥)",
                 modal_wp_title: "백서 (Whitepaper v3.1 상세 40선)", modal_wp_body: getFullWhitepaperHtml('ko'),
                 modal_faq_title: "자주 묻는 질문 (FAQ 20선 심층)", modal_faq_body: getFullFaqHtml('ko'),
-                modal_pol_title: "3대 POLICIES (AML·KYC·보안)", modal_pol_body: `<div style="font-size:12px; line-height:1.6; color:var(--text-main);"><p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">1. AML & KYC 정책 (Anti-Money Laundering)</p><p style="color:var(--text-muted); margin-bottom:10px;">- 국제 자금세탁방지기구(FATF) 기준을 준수하며, 모든 자산 이동에 대해 실시간 트랜잭션 모니터링을 수행합니다.</p><p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">2. 보안 및 프라이버시 (Security & Privacy)</p><p style="color:var(--text-muted); margin-bottom:10px;">- 멀티시그 암호화 전송 및 비수탁형 지갑 프로토콜로 자산을 안전하게 보호합니다.</p><p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">3. 컴플라이언스 및 자산 보호 정책 (Compliance)</p><p style="color:var(--text-muted);">- 글로벌 디지털 자산 규제 가이드라인과 연동하여 안전한 금융 서비스를 보장합니다.</p></div>`,
-                modal_reg_title: "18개국 디지털 자산법 및 AML 컴플라이언스", modal_reg_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">한국, 미국, 중국, 일본, 러시아, 베트남, 태국, 인도네시아, 아랍권, 독일, 이태리, 프랑스, 나이지리아, 카메룬, 남아공, 우크라이나, 힌디어권, 스페인어권을 포함한 18개국 주요 글로벌 규제 프레임워크 및 엄격한 AML/CFT 컴플라이언스 규격과 완벽하게 호환됩니다.</div>',
+                modal_pol_title: "3대 POLICIES (AML·KYC·보안 상세)", modal_pol_body: `<div style="font-size:12px; line-height:1.6; color:var(--text-main);">
+                    <p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">1. AML (자금세탁방지) 및 FATF 컴플라이언스 규격</p>
+                    <p style="color:var(--text-muted); margin-bottom:10px;">- 국제자금세탁방지기구(FATF) 권고안 40개 조항을 전면 수용하며, 트래블룰(Travel Rule) 자동 적용 및 제재 대상자(OFAC 및 글로벌 테러 자금 리스트) 실시간 스크리닝을 모든 송금 및 스왑 레이어에서 수행합니다.</p>
+                    <p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">2. KYC (고객확인제도) 및 생체 탈중앙 인증</p>
+                    <p style="color:var(--text-muted); margin-bottom:10px;">- Pi Network 공식 생태계 프로토콜과 연동된 분산형 신원증명(DID)을 기반으로, 개인정보 유출 없이 고도의 보안이 유지되는 무중단 자동 KYC 승인 체계를 보장합니다.</p>
+                    <p style="color:var(--accent-gold); font-weight:700; margin-bottom:4px;">3. 멀티시그(Multisig) 비수탁 보안 및 자산 보호 정책</p>
+                    <p style="color:var(--text-muted);">- 사용자의 프라이빗 키와 자산 통제권을 온전히 소유하는 비수탁형(Non-Custodial) 구조를 채택하며, 다중 분산 셰어 백업과 AGI 삐니의 실시간 이상 거래 차단 알고리즘으로 자산을 원천 보호합니다.</p>
+                </div>`,
+                modal_reg_title: "20개국 디지털 자산법 및 AML 컴플라이언스", modal_reg_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">한국, 미국, 벵골어(방글라데시), 포르투갈어(브라질 등), 중국, 일본, 러시아, 베트남, 태국, 인도네시아, 아랍권, 독일, 이태리, 프랑스, 나이지리아, 카메룬, 남아공, 우크라이나, 힌디어권, 스페인어권을 포함한 20개국 주요 글로벌 규제 프레임워크 및 엄격한 AML/CFT 컴플라이언스 규격과 완벽하게 호환됩니다.</div>',
                 modal_t165_title: "T165 초특급 랜드마크 허브 (경주 사옥)", modal_t165_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">경주에 위치한 165층 규모의 HK 그룹 글로벌 본사 및 AML 실시간 원장 감시 R&D 센터입니다.</div>'
             },
             en: {
-                headerSubText: "Global Next-Gen Decentralized Finance", langEngineLabel: "18-Nation Universal Language Engine", subTitle: "Fast Financial Operation Master Core",
+                headerSubText: "Global Next-Gen Decentralized Finance", langEngineLabel: "20-Nation Universal Language Engine", subTitle: "Fast Financial Operation Master Core",
                 dashTitle: "Personal Asset Dashboard", piSyncLabel: "Holding Amount (Pi Ledger Sync)", interestLabel: "Real-time Accumulated Interest (3-Yr 31.41% APY)",
                 mainnetBtnText: "Request Mainnet to Core Team Now", gridSectionTitle: "Distributed Networks", gridSectionSub: "[Process Active]",
                 agiTitle: "AGI Beeni Support", agiSub: "SONPONE Auto-Response & AI Orchestration", sonponeLabelText: "Detection Sensitivity:", syncText: "(Live Sync)",
                 initialBeeniMsg: "[AGI Beeni]: Testnet Pi environment and AML/KYC system fully operational! Chairman Jaewan Lee, how may I assist you?",
                 chatInputPlaceholder: "Ask Beeni...", chatSendBtn: "Send", supportEmailText: "Support: support@hkwb.world",
                 drawerTitle: "HK NAVIGATOR", menuGroup1Title: "Core Legal & Compliance", menuGroup2Title: "HK Global Ecosystem Hubs",
-                menu_wp: "Whitepaper v3.1 (40 Core Sections)", menu_faq: "FAQ Top 20", menu_pol: "3 Policies (AML/KYC)", menu_reg: "18-Nation AML Compliance",
+                menu_wp: "Whitepaper v3.1 (40 Core Sections)", menu_faq: "FAQ Top 20", menu_pol: "3 Policies (AML/KYC/Security)", menu_reg: "20-Nation AML Compliance",
                 hub_robot: "Robot: HK-ROBOT", hub_nexus: "Smart Glasses: HK-NEXUS", hub_uam: "UAM: HK-UAM", hub_fusion: "Artificial Sun: HK-FUSION", hub_bio: "Quantum Bio: HK-QUANTUMBIO", hub_space: "Space: HK-SPACE", hub_parts: "Parts Bank: HK-PARTSBANK", hub_defence: "Defence Tech: HK-DEFENCE-HUB", hub_t165: "T165 Landmark Hub (Gyeongju HQ)",
                 net1_title: "Wallet Connect", net1_desc: "Node wallet protocol auto-link", net2_title: "Transfer", net2_desc: "Multisig encrypted cross-border transfer",
                 net3_title: "Payment", net3_desc: "Real-time commerce escrow", net4_title: "Vault Deposit", net4_desc: "3-Year 31.41% APY trust vault",
@@ -1278,14 +1312,65 @@
                 calcResult: (p, r) => `Expected Return (${p} Years): +${r}`,
                 modal_wp_title: "Whitepaper v3.1 (40 Core Sections)", modal_wp_body: getFullWhitepaperHtml('en'),
                 modal_faq_title: "FAQ Top 20", modal_faq_body: getFullFaqHtml('en'),
-                modal_pol_title: "3 Policies (AML/KYC)", modal_pol_body: `<div style="font-size:12px; line-height:1.6; color:var(--text-main);"><p style="color:var(--accent-gold); font-weight:700;">1. AML & KYC Policy</p><p style="color:var(--text-muted); margin-bottom:8px;">Adheres to FATF standards with real-time transaction screening.</p><p style="color:var(--accent-gold); font-weight:700;">2. Security & Privacy</p><p style="color:var(--text-muted); margin-bottom:8px;">Protected by multisig encryption.</p><p style="color:var(--accent-gold); font-weight:700;">3. Compliance Policy</p><p style="color:var(--text-muted);">Aligned with 18-nation regulatory standards.</p></div>`,
-                modal_reg_title: "18-Nation AML Compliance", modal_reg_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">Fully compatible with global digital asset regulations and strict AML/CFT frameworks across 18 major nations.</div>',
+                modal_pol_title: "3 Policies (AML/KYC/Security)", modal_pol_body: `<div style="font-size:12px; line-height:1.6; color:var(--text-main);">
+                    <p style="color:var(--accent-gold); font-weight:700;">1. AML & FATF Compliance</p>
+                    <p style="color:var(--text-muted); margin-bottom:8px;">Fully adheres to FATF 40 recommendations with real-time screening.</p>
+                    <p style="color:var(--accent-gold); font-weight:700;">2. KYC & Decentralized DID</p>
+                    <p style="color:var(--text-muted); margin-bottom:8px;">Secure decentralized identity verification linked with Pi ecosystem.</p>
+                    <p style="color:var(--accent-gold); font-weight:700;">3. Multisig Security Policy</p>
+                    <p style="color:var(--text-muted);">Non-custodial asset protection with AI Beeni threat mitigation.</p>
+                </div>`,
+                modal_reg_title: "20-Nation AML Compliance", modal_reg_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">Fully compatible with global digital asset regulations and strict AML/CFT frameworks across 20 major nations including Bangladesh and Brazil.</div>',
                 modal_t165_title: "T165 Landmark Hub", modal_t165_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">165-story HK Group global headquarters and AML monitoring center in Gyeongju.</div>'
+            },
+            bn: {
+                headerSubText: "বৈশ্বিক পরবর্তী প্রজন্মের বিকেন্দ্রীকৃত অর্থায়ন", langEngineLabel: "২০-জাতির সর্বজনীন ভাষা ইঞ্জিন", subTitle: "দ্রুত আর্থিক অপারেশন মাস্টার কোর",
+                dashTitle: "ব্যক্তিগত সম্পদ ড্যাশবোর্ড", piSyncLabel: "পরিমাণ (পাই লেজার সিঙ্ক)", interestLabel: "রিয়েল-টাইম সঞ্চিত সুদ (৩ বছর ৩১.৪১% APY)",
+                mainnetBtnText: "এখনই কোর টিমের কাছে মেইননেট অনুরোধ করুন", gridSectionTitle: "বিকেন্দ্রীকৃত নেটওয়ার্ক", gridSectionSub: "[প্রক্রিয়া সক্রিয়]",
+                agiTitle: "AGI বিনি সহায়তা", agiSub: "SONPONE স্বয়ংক্রিয় প্রতিক্রিয়া এবং এআই অর্কেস্ট্রেশন", sonponeLabelText: "শনাক্তকরণ সংবেদনশীলতা:", syncText: "(লাইভ সিঙ্ক)",
+                initialBeeniMsg: "[AGI বিনি]: টেস্টনেট পাই পরিবেশ এবং AML/KYC সিস্টেম সম্পূর্ণ সচল! চেয়ারম্যান জ্যেওয়ান লি, আমি কীভাবে আপনাকে সাহায্য করতে পারি?",
+                chatInputPlaceholder: "বিনিকে জিজ্ঞাসা করুন...", chatSendBtn: "পাঠান", supportEmailText: "Support: support@hkwb.world",
+                drawerTitle: "HK NAVIGATOR", menuGroup1Title: "Core Legal & Compliance", menuGroup2Title: "HK Global Ecosystem Hubs",
+                menu_wp: "হোয়াইটপেপার v3.1 (৪০ কোর সেকশন)", menu_faq: "FAQ শীর্ষ ২০", menu_pol: "৩ নীতি (AML/KYC/নিরাপত্তা)", menu_reg: "২০-জাতির AML কমপ্লায়েন্স",
+                hub_robot: "রোবট: HK-ROBOT", hub_nexus: "স্মার্ট চশমা: HK-NEXUS", hub_uam: "UAM: HK-UAM", hub_fusion: "কৃত্রিম সূর্য: HK-FUSION", hub_bio: "কোয়ান্টাম বায়ো: HK-QUANTUMBIO", hub_space: "মহাকাশ: HK-SPACE", hub_parts: "পার্টস ব্যাংক: HK-PARTSBANK", hub_defence: "প্রতিরক্ষা প্রযুক্তি: HK-DEFENCE-HUB", hub_t165: "ল্যান্ডমার্ক হাব T165 (gyeongju HQ)",
+                net1_title: "ওয়ালেট সংযোগ", net1_desc: "নোট ওয়ালেট প্রোটোকল অটো-লিংক", net2_title: "স্থানান্তর", net2_desc: "মাল্টিসিগ এনক্রিপ্টেড ক্রস-বর্ডার স্থানান্তর",
+                net3_title: "পেমেন্ট", net3_desc: "রিয়েল-টাইম কমার্স এসক্রো", net4_title: "ভল্ট আমানত", net4_desc: "৩ বছরের ৩১.৪১% APY ট্রাস্ট ভল্ট",
+                net5_title: "পুরস্কার", net5_desc: "অবদান প্রণোদনা জমা ইঞ্জিন", net6_title: "UBI", net6_desc: "HK সোশ্যাল ফাউন্ডেশন UBI মডেল",
+                net7_title: "সোয়াপ", net7_desc: "তাত্ক্ষণিক টোকেন ক্রয় সোয়াপ", net8_title: "DEX সোয়াপ", net8_desc: "বিকেন্দ্রীকৃত অর্ডারহীন P2P মিল",
+                net9_title: "LP স্টেকিং", net9_desc: "তরলতার প্রমাণ ও লভ্যাংশ অধিকার", net10_title: "পাই লেজার", net10_desc: "পাই সম্পদ মেইননেট লেজার সিঙ্ক",
+                mainnetAlert: "মেইননেট সিঙ্ক্রোনাইজেশন এবং ট্রান্সমিশন অনুরোধ সফলভাবে সম্পন্ন হয়েছে!",
+                beeniReply: (txt) => `[AGI বিনি]: "${txt}" কমান্ড প্রাপ্ত হয়েছে। AML ব্যাকএন্ডের সাথে প্রক্রিয়া করা হচ্ছে।`,
+                p1_title: "ওয়ালেট সংযোগ", p1_desc: "আপনার ওয়ালেট ঠিকানা তাৎক্ষণিকভাবে লোড করতে অটো-লিঙ্কে ক্লিক করুন।", p1_lbl1: "ওয়ালেট ঠিকানা", p1_ph1: "অটো-লিঙ্কে ক্লিক করুন", p1_lbl2: "অথ কোড (ইস্যু করা:", p1_ph2: "৬-সংখ্যার কোড লিখুন", p1_btn: "অনুমোদন এবং সংযোগ করুন",
+                p2_title: "স্থানান্তর", p2_desc: "মাল্টিসিগ এনক্রিপ্টেড স্থানান্তর চালান।", p2_lbl1: "প্রাপকের ঠিকানা", p2_ph1: "G... বা ID", p2_lbl2: "পরিমাণ", p2_ph2: "পরিমাণ লিখুন", p2_lbl3: "নিরাপত্তা কোড (ইস্যু করা:", p2_ph3: "৬-সংখ্যার কোড লিখুন", p2_btn: "স্থানান্তর চালান",
+                p3_title: "পেমেন্ট", p3_desc: "এসক্রো সুরক্ষিত পেমেন্ট এগিয়ে নিন।", p3_lbl1: "পেমেন্টের পরিমাণ", p3_lbl2: "অনুমোদন কোড (ইস্যু করা:", p3_ph2: "৬-সংখ্যার কোড লিখুন", p3_btn: "পেমেন্ট অনুমোদন করুন",
+                p4_title: "ভল্ট আমানত", p4_desc: "সম্পদ ট্রাস্ট ভল্টে জমা করুন।", p4_lbl1: "আমানতের পরিমাণ", p4_ph1: "পরিমাণ লিখুন", p4_lbl2: "আমানত মেয়াদ", p4_opt1: "১ বছর", p4_opt3: "৩ বছর", p4_opt5: "৫ বছর", p4_lbl3: "প্রত্যাশিত রিটার্ন", p4_resDefault: "+০.০০", p4_lbl4: "ভল্ট কোড (ইস্যু করা:", p4_ph4: "৬-সংখ্যার কোড লিখুন", p4_btn: "আমানত অনুমোদন করুন",
+                p5_title: "পুরস্কার", p5_desc: "অবদান প্রণোদনা আয় দাবি করুন।", p5_lbl1: "দাবির পরিমাণ", p5_lbl2: "অথ কোড (ইস্যু করা:", p5_ph2: "৬-সংখ্যার কোড লিখুন", p5_btn: "পুরস্কার দাবি করুন",
+                p6_title: "UBI", p6_desc: "পৌর UBI বিতরণ দাবি করুন।", p6_lbl1: "পরিমাণ", p6_lbl2: "অথ কোড (ইস্যু করা:", p5_ph2: "৬-সংখ্যার কোড লিখুন", p6_btn: "UBI দাবি করুন",
+                p7_title: "সোয়াপ", p7_desc: "তাত্ক্ষণিকভাবে টোকেন ক্রয় এবং বিনিময় করুন।", p7_lbl1: "পাঠানোর পরিমাণ", p7_ph1: "১০ PI", p7_lbl2: "প্রাপ্ত সম্পদ", p7_lbl3: "অথ কোড (ইস্যু করা:", p7_ph3: "৬-সংখ্যার কোড লিখুন", p7_btn: "সোয়াপ চালান",
+                p8_title: "DEX সোয়াপ", p8_desc: "বিকেন্দ্রীকৃত P2P তরলতা মিল।", p8_lbl1: "P2P পরিমাণ", p8_ph1: "পরিমাণ লিখুন", p8_lbl2: "অথ কোড (ইস্যু করা:", p8_ph2: "৬-সংখ্যার কোড লিখুন", p8_btn: "অর্ডার অনুমোদন করুন",
+                p9_title: "LP 스테이킹", p9_desc: "তরলতার প্রমাণ এবং আমানত নিবন্ধন করুন।", p9_lbl1: "LP পরিমাণ", p9_ph1: "পরিমাণ লিখুন", p9_lbl2: "মেয়াদ", p9_lbl3: "প্রexpected রিটার্ন", p9_lbl4: "অথ কোড (ইস্যু করা:", p9_ph4: "৬-সংখ্যার কোড লিখুন", p9_btn: "LP স্টেকিং নিবন্ধন করুন",
+                p10_title: "পাই লেজার", p10_desc: "পাই সম্পদ মেইননেট লেজার পরিমাণ সিঙ্ক করুন।", p10_lbl1: "পাই পরিমাণ", p10_lbl2: "অথ কোড (ইস্যু করা:", p9_ph2: "৬-সংখ্যার কোড লিখুন", p9_btn: "সিঙ্ক চালান",
+                authFailAlert: "❌ অথ কোড মিলছে না।", authSuccessPrefix: "✅ [অথ সফল]",
+                msg1: "AML চেক সহ ওয়ালেট সংযুক্ত হয়েছে", msg2: "স্থানান্তর প্রক্রিয়া সম্পন্ন", msg3: "এসক্রো অনুমোদিত", msg4: "সফলভাবে জমা হয়েছে", msg5: "পুরস্কার দাবি করা হয়েছে", msg6: "UBI দাবি করা হয়েছে", msg7: "সোয়াপ সম্পন্ন", msg8: "DEX অর্ডার অনুমোদিত", msg9: "LP স্টেকিং নিবন্ধিত", msg10: "পাই লেজার সিঙ্ক হয়েছে",
+                calcDefault: "আমানতের পরিমাণ লিখুন (+0.00)",
+                calcResult: (p, r) => `প্রত্যাশিত রিটার্ন (${p} বছর): +${r}`,
+                modal_wp_title: "হোয়াইটপেপার v3.1 (৪০ কোর সেকশন)", modal_wp_body: getFullWhitepaperHtml('bn'),
+                modal_faq_title: "FAQ শীর্ষ ২০", modal_faq_body: getFullFaqHtml('bn'),
+                modal_pol_title: "৩ নীতি (AML/KYC/নিরাপত্তা)", modal_pol_body: `<div style="font-size:12px; line-height:1.6; color:var(--text-main);">
+                    <p style="color:var(--accent-gold); font-weight:700;">১. AML নীতি এবং FATF কমপ্লায়েন্স</p>
+                    <p style="color:var(--text-muted); margin-bottom:8px;">রিয়েল-টাইম স্ক্রিনিং সহ FATF ৪০ সুপারিশ কঠোরভাবে মেনে চলে।</p>
+                    <p style="color:var(--accent-gold); font-weight:700;">২. KYC এবং বিকেন্দ্রীকৃত DID</p>
+                    <p style="color:var(--text-muted); margin-bottom:8px;">পাই ইকোসিস্টেমের সাথে সংযুক্ত নিরাপদ পরিচয় যাচাইকরণ।</p>
+                    <p style="color:var(--accent-gold); font-weight:700;">৩. মাল্টিসিগ সম্পদ সুরক্ষা</p>
+                    <p style="color:var(--text-muted);">এআই বিনি হুমকি প্রতিকারের সাথে নন-কাস্টোডিয়াল সম্পদ সুরক্ষা।</p>
+                </div>`,
+                modal_reg_title: "২০-জাতির AML কমপ্লায়েন্স", modal_reg_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">বাংলাদেশ এবং ব্রাজিল সহ ২০টি প্রধান দেশের বৈশ্বিক ডিজিটাল সম্পদ প্রবিধান এবং কঠোর AML/CFT কাঠামোর সাথে সম্পূর্ণরূপে সামঞ্জস্যপূর্ণ।</div>',
+                modal_t165_title: "ল্যান্ডমার্ক হাব T165", modal_t165_body: '<div style="font-size:12px; line-height:1.6; color:var(--text-muted);">gyeongju-এ ১৬৫ তলা HK গ্রুপ বৈশ্বিক সদর দফতর এবং AML পর্যবেক্ষণ কেন্দ্র।</div>'
             }
         };
 
-        // 18개 언어 전체 자동 맵핑 확장 (누락 방지)
-        ['zh', 'ja', 'ru', 'vi', 'th', 'id', 'ar', 'de', 'it', 'fr', 'ng', 'cm', 'za', 'ua', 'hi', 'es'].forEach(lang => {
+        // 20개 언어 전체 자동 맵핑 보장
+        ['pt', 'zh', 'ja', 'ru', 'vi', 'th', 'id', 'ar', 'de', 'it', 'fr', 'ng', 'cm', 'za', 'ua', 'hi', 'es'].forEach(lang => {
             if(!translations[lang]) {
                 translations[lang] = translations['en'];
             }
