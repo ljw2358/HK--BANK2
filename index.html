@@ -1284,7 +1284,7 @@
             }
         };
 
-        // 18개 언어 전체 자동 맵핑 확장
+        // 18개 언어 전체 자동 맵핑 확장 (누락 방지)
         ['zh', 'ja', 'ru', 'vi', 'th', 'id', 'ar', 'de', 'it', 'fr', 'ng', 'cm', 'za', 'ua', 'hi', 'es'].forEach(lang => {
             if(!translations[lang]) {
                 translations[lang] = translations['en'];
